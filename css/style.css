@@ -1,0 +1,9 @@
+.custom-container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 100px;
+}
+
+.navbar>.container-fluid {
+  padding: 30px 100px;
+}

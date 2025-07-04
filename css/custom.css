@@ -1,0 +1,135 @@
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      z-index: 1000;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      padding: 1.2rem 0;
+    }
+
+    .logo img {
+      max-height: 40px;
+    }
+
+    /* Custom hamburger */
+    .menu-burger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      border: none;
+      width: 28px;
+      height: 20px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .menu-burger:before,
+    .menu-burger:after,
+    .menu-burger div {
+      content: "";
+      width: 28px;
+      height: 2px;
+      position: absolute;
+      background-color: #000;
+      transition: all 250ms ease-out;
+    }
+
+    .menu-burger:before {
+      transform: translateY(-8px);
+    }
+
+    .menu-burger div {
+      transform: translateY(0);
+    }
+
+    .menu-burger:after {
+      transform: translateY(8px);
+    }
+
+    .active.menu-burger:before {
+      transform: translateY(0) rotate(45deg);
+    }
+
+    .active.menu-burger div {
+      opacity: 0;
+    }
+
+    .active.menu-burger:after {
+      transform: translateY(0) rotate(-45deg);
+    }
+
+    /* Overlay styles */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      backdrop-filter: blur(30px);
+      background-color: #0e0e0ecc;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      z-index: 999;
+    }
+
+    .overlay-menu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+    }
+
+    .menu-item p {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 11vw;
+      font-weight: 600;
+      line-height: 80%;
+      transition: letter-spacing 0.3s;
+      transform: translateY(255px);
+    }
+
+    .menu-item p:hover {
+      letter-spacing: 0.075em;
+    }
+
+    .overlay-menu a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-link {
+      margin-right: 1.5rem;
+      color: #000;
+    }
+
+    .btn-outline-success {
+      border-color: green;
+      color: green;
+    }
+
+    @media (min-width: 992px) {
+      .menu-burger {
+        display: none;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .navbar-desktop {
+        display: none !important;
+      }
+    }
+  </style>
