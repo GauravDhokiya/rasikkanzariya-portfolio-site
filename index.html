@@ -12,55 +12,82 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <div class="nav-wrapper">
-        <div class="container-fluid px-0">
-            <nav class="d-flex justify-content-between align-items-center">
-                <!-- Logo -->
-                <div class="logo">
-                    <img src="assets/images/logo_main.svg" alt="logo" />
-                </div>
+    <header>
+        <!-- NAVBAR -->
+        <div class="nav-wrapper">
+            <div class="container-fluid px-0">
+                <nav class="d-flex justify-content-between align-items-center">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="assets/images/logo_main.svg" alt="logo" />
+                    </div>
 
-                <!-- Inline Menu for Desktop -->
-                <div class="d-flex align-items-center navbar-desktop">
-                    <a href="#" class="nav-link">Services</a>
-                    <a href="#" class="nav-link">Work</a>
-                    <a href="#" class="nav-link">About me</a>
-                    <button type="button" class="btn contact-btn rounded-2 d-flex">Contact <img
-                            src="assets/images/contact_arrow.svg" alt="arrow"></button>
-                </div>
+                    <!-- Inline Menu for Desktop -->
+                    <div class="d-flex align-items-center navbar-desktop">
+                        <a href="#" class="nav-link">Services</a>
+                        <a href="#" class="nav-link">Work</a>
+                        <a href="#" class="nav-link">About me</a>
+                        <button type="button" class="btn contact-btn rounded-2 d-flex">Contact <img
+                                src="assets/images/contact_arrow.svg" alt="arrow"></button>
+                    </div>
 
-                <!-- Custom Hamburger for Mobile -->
-                <div class="d-lg-none">
-                    <button class="menu-burger" onclick="this.classList.toggle('active')">
-                        <div></div>
-                    </button>
-                </div>
-            </nav>
-        </div>
-    </div>
-
-    <!-- GSAP Overlay Menu (mobile only) -->
-    <div class="overlay">
-        <div class="overlay-menu">
-            <div class="menu-item">
-                <p id="active"><a href="#" class="nav-link">Services</a></p>
-            </div>
-            <div class="menu-item">
-                <p><a href="#" class="nav-link">Work</a></p>
-            </div>
-            <div class="menu-item">
-                <p><a href="#" class="nav-link">About me</a></p>
-            </div>
-            <div class="menu-item">
-                <!-- <p><a href="#">Contact</a></p> -->
-                <p><button type="button" class="btn contact-btn rounded-2 d-flex">Contact <img
-                            src="assets/images/contact_arrow.svg" alt="arrow"></button></p>
-
+                    <!-- Custom Hamburger for Mobile -->
+                    <div class="d-lg-none">
+                        <button class="menu-burger" onclick="this.classList.toggle('active')">
+                            <div></div>
+                        </button>
+                    </div>
+                </nav>
             </div>
         </div>
-    </div>
 
+        <!-- GSAP Overlay Menu (mobile only) -->
+        <div class="overlay">
+            <div class="overlay-menu">
+                <div class="menu-item">
+                    <p id="active"><a href="#" class="nav-link">Services</a></p>
+                </div>
+                <div class="menu-item">
+                    <p><a href="#" class="nav-link">Work</a></p>
+                </div>
+                <div class="menu-item">
+                    <p><a href="#" class="nav-link">About me</a></p>
+                </div>
+                <div class="menu-item">
+                    <!-- <p><a href="#">Contact</a></p> -->
+                    <p><button type="button" class="btn contact-btn rounded-2 d-flex">Contact <img
+                                src="assets/images/contact_arrow.svg" alt="arrow"></button></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-spacer"></div>
+    </header>
+
+    <main>
+        <div class="container custom-container px-0">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="row hero-content">
+                    <div class="col-12">
+                        <h1 class="hero-line">Understand</h1>
+                    </div>
+                    <div class="col-12 d-flex flex-wrap" style="gap: 20px;">
+                        <div class="pill-image d-flex align-items-center justify-content-center">
+                            <img src="assets/images/graphic.svg" alt="graphic_image" class="img-fluid"/>
+                        </div>
+                        <h1 class="hero-line d-flex align-items-end">Create</h1>
+                    </div>
+                    <div class="col-12 d-flex flex-column justify-content-xl-between align-items-xl-center flex-xl-row">
+                        <h1 class="hero-line">Connect</h1>
+                        <p class="hero-subtitle mb-0 d-flex justify-content-center w-auto">
+                            I'm an independent UI/UX & Product Designer crafting clean digital experiences from India.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js"></script>
