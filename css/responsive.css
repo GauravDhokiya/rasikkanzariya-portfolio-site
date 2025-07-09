@@ -6,6 +6,9 @@
   .hero-section {
     padding: 24px 30px;
   }
+  .hero-section-lg-img{
+    width: 250px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -25,12 +28,19 @@
     font-size: 90px;
     line-height: 90px;
   }
+  .hero-section-lg-img{
+    width: 350px;
+  }
 }
 
 @media (min-width: 1200px) {
   .hero-line {
     font-size: 120px;
     line-height: 120px;
+  }
+
+  .hero-section-lg-img{
+    width: 450px;
   }
 }
 
@@ -51,6 +61,9 @@
   .hero-subtitle {
     padding-top: 46px;
     padding-bottom: 24px;
+  }
+  .hero-section-lg-img{
+    width: 560px;
   }
 }
 

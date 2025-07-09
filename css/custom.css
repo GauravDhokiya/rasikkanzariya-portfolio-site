@@ -116,8 +116,12 @@ h1 {
 }
 
 .contact-btn:hover {
-  color: #030303;
-  background-color: #EFEFEF;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.contact-btn:hover svg path {
+  fill: var(--color-white);
 }
 
 .custom-container {
@@ -130,7 +134,7 @@ h1 {
 }
 
 .hero-line {
-  color: var(--color-text-primary);
+  color: var(--color-primary);
   font-family: Unbounded;
   font-size: 50px;
   line-height: 50px;
@@ -139,7 +143,7 @@ h1 {
 }
 
 .hero-subtitle {
-  color: var(--color-text-secondary);
+  color: var(--color-secondary);
   font-family: Poppins;
   font-size: var(--font-sm);
   font-weight: var(--font-weight-primary);
